@@ -1,0 +1,53 @@
+{% extends 'landing_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Natia{% endblock title %}
+
+{% block page_content %}
+{% include 'partials/navbar-dark.html' %}
+
+<!-- Start Hero -->
+<section class="bg-half-150 d-table w-100 home3-section" id="home">
+  <div class="container">
+
+    <div class="row align-items-center justify-content-center">
+      <!-- Start Col -->
+      <div class="col-lg-6 col-md-6">
+        <div class="title-heading text-center text-md-start">
+          <span class="para-desc text-primary align-content-center justify-content-center" style="--bs-text-opacity: .8;">
+            Hello, It's Jack
+          </span>
+          <h4 class="typed-heading mt-4">I design & build Unique products</h4>
+          <p class="text-white para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
+            I have been working, i am proficient in ui design user experience, researcher, web development.
+          </p>
+
+          <div class="align-items-center justify-content-center mt-5">
+            <a href="javascript:void(0)" class="btn btn-primary rounded-pill text-capitalize me-4">Contact me</a>
+          </div>
+        </div>
+      </div><!-- End col -->
+
+      <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="position-relative demo-3">
+          <img src="{% static 'images/demo-3.png' %}" class="img-fluid mx-auto d-block rounded-5"></img>
+        </div>
+      </div><!-- End col -->
+    </div><!-- End row -->
+  </div><!-- End container -->
+</section>
+
+{% endblock page_content %}
+
+{% block extra_javascript %}
+
+<script src="{% static '/js/plugins.init.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+
+<script src="{% static '/libs/shufflejs/shuffle.min.js' %}"></script>
+<script src="{% static '/js/filter.js' %}"></script>
+
+<script src="{% static '/js/app.min.js' %}"></script>
+
+{% endblock extra_javascript %}

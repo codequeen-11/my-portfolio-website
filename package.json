@@ -1,0 +1,43 @@
+{
+  "name": "natia",
+  "version": "0.1.0",
+  "description": "Natia - Bootstrap Admin and Dashboard Template",
+  "author": "zoyothemes",
+  "private": true,
+  "devDependencies": {
+    "@popperjs/core": "^2.10.2",
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^5.2.3",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-npm-dist": "^1.0.4",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "pixrem": "^5.0.0",
+    "postcss": "^8.3.11",
+    "sass": "^1.77.6"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "countup.js": "^2.8.0",
+    "gumshoejs": "^5.1.2",
+    "scrollcue": "^2.0.0",
+    "shufflejs": "^6.1.0",
+    "simplebar": "^5.3.0",
+    "swiper": "8.0.7"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp generate-assets"
+  }
+}

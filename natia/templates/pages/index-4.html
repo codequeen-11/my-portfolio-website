@@ -1,0 +1,96 @@
+{% extends 'landing_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Natia{% endblock title %}
+
+{% block page_content %}
+{% include 'partials/navbar-dark.html' %}
+
+<!-- Start Hero -->
+<!-- <section class="bg-half-150 d-table w-100 home4-section pb-0" id="home"> -->
+  <section class="bg-half-100 d-table w-100 home4-section pb-2 mb-0" id="home">
+
+  <!-- <section class="bg-half-120 d-table w-100 home4-section pb-2" id="home"> -->
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <!-- Start Col -->
+      <div class="col-lg-6 col-md-6">
+        <div class="title-heading text-center text-md-start">
+          <span class="para-desc punch-line text-white align-content-center justify-content-center" style="--bs-text-opacity: .8;">
+               Full-Stack Web Developer with a Creative Edge
+          </span>
+          <h4 class="typed-heading mt-4">Hi, i'm <span class="text-primary">Aisha</span>  Full-Stack Dveloper</h4>
+          <p class="text-white para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
+             I'm a passionate Fullstack Developer crafting seamless user experiences from front to back — where design meets functionality.
+          </p>
+
+          <div class="button-section">
+            <a href="javascript:void(0)" class="btn btn-primary rounded-pill mt-lg-4 mt-4 text-capitalize me-3">Contact me</a>
+            <a href="javascript:void(0)" class="btn btn-outline-primary rounded-pill mt-4 mt-md-4 text-capitalize">Profile</a>
+          </div>
+        </div>
+      </div><!-- End col -->
+
+      <div class="col-lg-6 col-md-6 position-relative mt-4 pt-2 mt-sm-0 pt-sm-0">
+
+        <!-- <div class="hero-thumb-avatar rounded p-3">
+          <h6 class="text-primary avatar-title mb-2">Real Customer</h6>
+          <div class="d-inline-flex align-items-center">
+            <div class="avatar-group">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-1.jpg' %}" alt="Avatar">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-9.jpg' %}" alt="Avatar">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-4.jpg' %}" alt="Avatar">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-6.jpg' %}" alt="Avatar">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-5.jpg' %}" alt="Avatar">
+              <img class="img-fluid avatar-sm avatar-group-item" src="{% static '/images/client/img-10.jpg' %}" alt="Avatar">
+            </div>
+          </div>
+        </div> -->
+
+        <div class="position-relative demo-3">
+          <img src="{% static '/images/aisha-transparent-photo.png' %}" class="img-fluid mx-auto d-block"></img>
+        </div>
+
+        <div class="hero-thumb-exep rounded p-3">
+          <div class="d-inline-flex">
+            <h6 class="experience-year text-primary me-3"> < 1 </h6>
+            <div class="experience-section">
+              <h6 class="experience-title text-dark mb-0">Year</h6>
+              <p class="experience-pera mb-0">Experience</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- End col -->
+    </div><!-- End row -->
+  </div><!-- End container -->
+</section>
+<style>
+  #home {
+    padding-bottom: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #resume {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+  }
+</style>
+
+
+{% endblock page_content %}
+
+{% block extra_javascript %}
+
+<script src="{% static '/js/plugins.init.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+
+<script src="{% static '/libs/shufflejs/shuffle.min.js' %}"></script>
+<script src="{% static '/js/filter.js' %}"></script>
+
+<script src="{% static '/js/app.min.js' %}"></script>
+
+{% endblock extra_javascript %}

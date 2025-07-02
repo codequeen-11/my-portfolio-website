@@ -1,0 +1,167 @@
+ {% load static i18n %}
+
+{% load static i18n %}
+
+<!-- Contact Start -->
+<section class="bg-half-100 contact-section py-5" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <div class="contact-left">
+          <div class="title-section mb-4">
+            <h2 class="title-sub-heading h6 text-muted">Contact</h2>
+            <h3 class="title-main-heading h4">Get in Touch</h3>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-type d-flex gap-3 align-items-center mb-4">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <h5 class="mb-1">Phone</h5>
+                <p class="mb-0 text-muted small"><a href="tel:25196151854">+251961512854</a></p>
+              </div>
+            </div>
+
+            <div class="contact-type d-flex gap-3 align-items-center mb-4">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send">
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                  <path d="M22 2 11 13" />
+                </svg>
+              </div>
+              <div>
+                <h5 class="mb-1">Email</h5>
+                <p class="mb-0 text-muted small"><a href="mailto:ayumeyra11@gmail.com">ayumeyra11@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-type d-flex gap-3 align-items-center mb-4">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h5 class="mb-1">Address</h5>
+                <p class="mb-0 text-muted small">Arsi University Dinsho Campus, Asela, Ethiopia</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+<!-- Contact Form -->
+<form action="https://formspree.io/f/mwpbzekr" method="POST" id="contact-form" class="p-3 bg-white shadow rounded">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <input type="text" name="name" placeholder="Your Name" required
+             class="form-control form-control-lg rounded-pill border-1 shadow-sm" />
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" placeholder="Your Email" required
+             class="form-control form-control-lg rounded-pill border-1 shadow-sm" />
+    </div>
+    <div class="col-12">
+      <input type="text" name="subject" placeholder="Subject" required
+             class="form-control form-control-lg rounded-pill border-1 shadow-sm" />
+    </div>
+    <div class="col-12">
+      <textarea name="message" rows="4" placeholder="Your Message" required
+                class="form-control form-control-lg rounded border-1 shadow-sm"></textarea>
+    </div>
+
+    <!-- Hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="New message from Portfolio Contact Form">
+
+    <!-- Submit button -->
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-lg btn-primary px-5 py-2 rounded-pill mt-3 shadow">
+        🚀 Send Message
+      </button>
+    </div>
+  </div>
+</form>
+
+<!-- Thank You Message -->
+<div id="thank-you-message" class="alert alert-success mt-3 text-center fw-semibold" style="display: none;">
+  ✅ Thank you! Your message has been sent.
+</div>
+<!-- custom css -->
+<style>
+  /* Placeholder style */
+  ::placeholder {
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  /* Contact form container */
+  #contact-form {
+    background-color: #fdfdfd;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Input & Textarea style */
+  #contact-form input,
+  #contact-form textarea {
+    background-color: #fff;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+  }
+
+  /* Submit button style */
+  #contact-form button {
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #contact-form button:hover {
+    background-color: #084fc7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Thank you message box */
+  #thank-you-message {
+    display: none;
+    background-color: #e6f9ec;
+    border: 1px solid #b6e5c2;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+
+    </div>
+  </div>
+</section>
+<!-- Contact End -->

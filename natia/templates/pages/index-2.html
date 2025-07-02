@@ -1,0 +1,102 @@
+{% extends 'landing_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Natia{% endblock title %}
+
+{% block page_content %}
+{% include 'partials/navbar-dark.html' %}
+
+<!-- start hero -->
+<section class="bg-half-150 d-table w-100 home2-section bg-dark pb-0" id="home">
+  <div class="container position-relative z-1">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-10">
+        <div class="caption-box text-center mb-50">
+          <h5 class="mb-3">Hello, I'm</h5>
+          <h1 class="typed-heading">John Krish</h1>
+          <p class="text-white">I specialize in designing for both web and mobile platforms</p>
+        </div>
+      </div>
+    </div><!-- End row -->
+
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-3">
+        <div class="pt-30">
+          <div class="expertise-section text-center text-md-start">
+            <h6 class="text-white exep-title mb-2">Expertise</h6>
+            <span class="sub-title mb-0 text-white">Back-End & Full-Stack Expert</span>
+          </div>
+        </div>
+
+        <div class="pt-30 text-center text-md-start">
+          <div class="mb-2 start-group d-flex justify-content-sm-start justify-content-center align-items-center">
+            <span class="d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-white fill-white me-1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-white fill-white me-1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-white fill-white me-1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-white fill-white me-1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star text-white fill-white me-1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </span>
+            <span class="text-white ms-2 fw-bold fs-6">4.9</span>
+          </div>
+          <span class="sub-title t-5 text-white">70 + Clients Review</span>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="demo-second-image align-content-center justify-content-center">
+          <img src="{% static '/images/men-2.png' %}" class="img-fluid" alt="demo images">
+        </div>
+      </div>
+
+      <div class="col-lg-3 offset-lg-1 col-md-3">
+        <div class="pt-30">
+          <div class="mb-90 year-section text-center text-md-start">
+            <h6 class="text-white exep-title">15 +</h6>
+            <span class="sub-title mt-5 text-white">Year Of Experience</span>
+          </div>
+        </div>
+
+        <div class="pt-30 text-center text-md-start">
+          <h6 class="text-white exep-title">Web and Mobile Framework</h6>
+          <a href="javascript:void(0)" class="sub-title text-decoration-underline mt-5 text-white">Explore</a>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end container -->
+</section>
+
+<div class="position-relative">
+  <div class="shape overflow-hidden text-secondary">
+    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+    </svg>
+  </div>
+</div>
+<!-- end hero -->
+
+{% endblock page_content %}
+
+{% block extra_javascript %}
+
+<script src="{% static '/js/plugins.init.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+
+<script src="{% static '/libs/shufflejs/shuffle.min.js' %}"></script>
+<script src="{% static '/js/filter.js' %}"></script>
+
+<script src="{% static '/js/app.min.js' %}"></script>
+
+{% endblock extra_javascript %}

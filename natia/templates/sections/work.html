@@ -1,0 +1,135 @@
+{% load static i18n %}
+
+<!-- Work Section -->
+<!-- <section class="bg-half-100 work-section " id="work"> -->
+  <section class="bg-half-100 work-section pt-4 pb-5 mt-0" id="work">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+      <div class="col-xxl-12 text-center">
+        <div class="title-section">
+          <h1 class="title-sub-heading mb-10 mt-0">Portfolio</h1>
+          <h2 class="title-main-heading mb-10">My work</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-xxl-12"><!-- Start Col -->
+        <div class="filters-group mb-3">
+          <ul class="container-filter list-inline filter-options text-center">
+            <li class="list-inline-item categories active" data-group="all">All</a></li>
+            <!-- <li class="list-inline-item categories" data-group="branding">Branding</a></li>
+            <li class="list-inline-item categories" data-group="designing">Designing</a></li>
+            <li class="list-inline-item categories" data-group="photography">Photography</a></li>
+            <li class="list-inline-item categories" data-group="development">Development</a></li> -->
+          </ul>
+        </div>
+      </div><!-- End col -->
+    </div>
+
+    <div id="gallery-wrapper" class="row projects-wrapper gy-4">
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["branding"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/01.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/netflix-black.jpg' %}" class="img-fluid" alt="work-image" style="height:350px; object-fit:cover;">
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='portfolio.html'>Netflix-Clone
+                  </a></h5>
+              <h6 class="text-light tag mb-0">Netflix</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["designing"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/02.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/amazon-1.png' %}" class="img-fluid" alt="work-image" style="height:350px; object-fit:cover;">
+
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='https://amazon-website-full-app-trial.netlify.app/'>Amazon Website-clone
+                   </a></h5>
+              <h6 class="text-light tag mb-0">Amazon</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["photography"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/03.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/apple-1.png' %}" class="img-fluid" alt="work-image" style="height:350px; object-fit:cover;">
+
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='https://super-clone-my-newappppple.netlify.app/'>Apple Website-Clone
+                  </a></h5>
+              <h6 class="text-light tag mb-0">Apple</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["development"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/04.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/evangadi-forum-1.png' %}" class="img-fluid" alt="work-image" style="height:350px; object-fit:cover;">
+
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='https://aisha-evangadi-forum.diladev.com/'>Evangadi Forum
+                   </a></h5>
+              <h6 class="text-light tag mb-0">Forum</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["branding"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/05.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/food-menu-2.jpg' %}" class="img-fluid"   alt="work-image" style="height:350px;  object-fit:cover;">
+
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='https://ethiopian-cultural-little-menu.netlify.app/'>Ethiopian Cultural-Food-Menu
+                  </a></h5>
+              <h6 class="text-light tag mb-0">Menu</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="col-lg-4 col-md-6 col-12 picture-item" data-groups='["designing"]'>
+        <div class="work-container position-relative d-block overflow-hidden rounded">
+          <div class="card-body p-0">
+            <!-- <img src="{% static '/images/portfolio/06.jpg' %}" class="img-fluid" alt="work-image"> -->
+             <img src="{% static '/images/portfolio/abe-garage-1.png' %}" class="img-fluid" alt="work-image" style="height:350px; object-fit:cover;">
+
+            <div class="overlay-work bg-dark"></div>
+            <div class="content">
+              <h5 class="mb-3"><a class='content-title' href='portfolio.html'>On progress...coming soon
+                  </a></h5>
+              <h6 class="text-light tag mb-0">Abe-garage</h6>
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+    </div><!--end row-->
+
+    <div class="col-12">
+      <div class="text-center">
+        <a href="#!" class="btn btn-primary rounded-pill mt-4 "> See more</a>
+      </div>
+    </div><!--end col-->
+  </div><!-- End container -->
+</section>

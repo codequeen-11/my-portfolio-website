@@ -1,0 +1,59 @@
+{% extends 'landing_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Natia{% endblock title %}
+
+{% block page_content %}
+{% include 'partials/navbar-light.html' %}
+
+<!-- Start Hero -->
+<section class="bg-half-170 d-table w-100 home6-section bg-white" id="home">
+  <div class="container">
+    <div class="row align-items-center justify-content-center justify-content-md-between">
+      <!-- Start Col -->
+      <div class="col-lg-6 col-md-6">
+        <div class="title-heading text-center text-md-start">
+          <h4 class="typed-heading text-dark mt-4">The Integration Design, And <span class="text-line text-primary">Technology</span></h4>
+          <p class="text-dark para-desc mx-auto mb-0 mt-4" style="--bs-text-opacity: .8;">
+            I have been working, i am proficient in ui design user experience, researcher, web development.
+          </p>
+
+          <div class="button-section">
+            <a href="javascript:void(0)" class="btn btn-primary rounded-pill mt-5 text-capitalize me-2">Contact me</a>
+            <a href="javascript:void(0)" class="btn btn-outline-primary text-dark rounded-pill mt-5 text-capitalize">Profile</a>
+          </div>
+        </div>
+      </div><!-- End col -->
+
+      <div class="col-lg-5 col-md-5">
+        <div class="home-image-6 position-relative">
+          <div class="position-relative z-1 mt-3 mt-md-0">
+            <img src="{% static '/images/demo-7.png' %}" class="img-fluid mx-auto rounded-circle d-block">
+          </div>
+        </div>
+      </div><!-- End col -->
+    </div><!-- End row -->
+  </div><!-- End container -->
+  <div class="svg-img-2">
+    <img src="{% static '/images/arrow.svg' %}" alt="arrow" class="img-fluid">
+  </div>
+  <div class="svg-img-3">
+    <img src="{% static '/images/three-l-2.svg' %}" alt="shape-three" class="img-fluid">
+  </div>
+</section>
+<!-- End Hero -->
+
+{% endblock page_content %}
+
+{% block extra_javascript %}
+
+<script src="{% static '/js/plugins.init.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+
+<script src="{% static '/libs/shufflejs/shuffle.min.js' %}"></script>
+<script src="{% static '/js/filter.js' %}"></script>
+
+<script src="{% static '/js/app.min.js' %}"></script>
+
+{% endblock extra_javascript %}
