@@ -40,12 +40,16 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool("DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS
 SECURE_HSTS_PRELOAD = env.bool("DJANGO_SECURE_HSTS_PRELOAD", default=True)
 SECURE_CONTENT_TYPE_NOSNIFF = env.bool("DJANGO_SECURE_CONTENT_TYPE_NOSNIFF", default=True)
 
-# STATIC & MEDIA (Local)
+# STATIC & MEDIA (Updated for Deployment)
 # ---------------------------------------------------------------------
 STATIC_URL = "/static/"
-MEDIA_URL = "/media/"
+STATIC_ROOT = BASE_DIR / "staticfiles"  # ✅ Required for collectstatic
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"  # ✅ Enable WhiteNoise
 
-# EMAIL (use console backend or SMTP as needed)
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+# EMAIL
 # ---------------------------------------------------------------------
 DEFAULT_FROM_EMAIL = env("DJANGO_DEFAULT_FROM_EMAIL", default="natia <noreply@example.com>")
 SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default=DEFAULT_FROM_EMAIL)
@@ -94,5 +98,4 @@ LOGGING = {
     },
 }
 
-# Your stuff...
 # ------------------------------------------------------------------------------
