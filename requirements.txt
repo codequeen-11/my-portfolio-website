@@ -1,12 +1,15 @@
-# PRECAUTION: avoid production dependencies that aren't in development
-
- -r requirements/base.txt
-
-
-gunicorn==23.0.0  # https://github.com/benoitc/gunicorn
-Collectfasta==3.2.0  # https://github.com/jasongi/collectfasta
-
-# Django
-# ------------------------------------------------------------------------------
-django-storages[s3]==1.14.4  # https://github.com/jschneier/django-storages
-django-anymail[mailgun]==12.0  # https://github.com/anymail/django-anymail
+asgiref==3.8.1
+cffi==1.17.1
+crispy-bootstrap5==2025.6
+cryptography==45.0.4
+Django==5.2.3
+django-allauth==65.9.0
+django-crispy-forms==2.4
+django-debug-toolbar==5.2.0
+django-environ==0.12.0
+django-extensions==4.1
+fido2==2.0.0
+pycparser==2.22
+sqlparse==0.5.3
+tzdata==2025.2
+whitenoise==6.9.0
